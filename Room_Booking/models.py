@@ -20,4 +20,5 @@ class Room(models.Model):
     currency = models.CharField(default="UGX", max_length=10, choices=CURRENCY_TYPES)
     maxOccupancy = models.IntegerField(default=1)
     description = models.TextField(max_length=1)
+    # 07:40
 
