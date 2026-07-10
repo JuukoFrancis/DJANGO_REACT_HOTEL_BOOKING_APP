@@ -1,0 +1,12 @@
+Now maybe what you can do next is come up with the real system itself
+I.e 
+The backend, the frontend
+
+First understand what a hotel would require a system for
+Then how the system will store the data 
+Then how the data will be of help to the hotel through the system
+
+
+
+
+You can start by breaking down the system components, then writing down tasks for each single component
