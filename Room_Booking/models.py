@@ -19,5 +19,5 @@ class Room(models.Model):
     pricePerNIght = models.IntegerField(default=150)
     currency = models.CharField(default="UGX", max_length=10, choices=CURRENCY_TYPES)
     maxOccupancy = models.IntegerField(default=1)
-    description = models.TextField(max_length=1000)
+    description = models.TextField(max_length=1)
 
