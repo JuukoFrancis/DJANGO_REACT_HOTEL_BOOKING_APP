@@ -9,6 +9,10 @@ pip install pygments
 django-admin startproject Booking_backend .
 py manage.py startapp Room_Booking
 
+
+
+
+
 Add to installed apps
 Room_Booking
 rest_framework
@@ -19,13 +23,136 @@ rest_framework
 it inherits from (models.Model)
 
 
+Create superuser
+py manage.py createsuperuser
+
+Create serializers
+inheit from  serializers.HyperlinkedModelSerializer because we're building from the api routes
+
+
+Viewsets
+Routers
+Parsers
+Renderers
+Serializers
+Serializer fields
+Serializer relations
+Validators
+Authentication
+Permissions
+Caching
+Throttling
+Filtering
+Pagination
+Versioning
+Content negotiation
+Metadata
+Schemas
+Format suffixes
+Returning URLs
+Exceptions
+Status codes
+Testing
+Settings
+Table of contents
+Serializers
+Declaring Serializers
+Serializing objects
+Deserializing objects
+Saving instances
+Passing additional attributes to .save()
+Overriding .save() directly.
+Validation
+Raising an exception on invalid data
+Field-level validation
+Object-level validation
+Validators
+Accessing the initial data and instance
+Partial updates
+Dealing with nested objects
+Writable nested representations
+Writing .create() methods for nested representations
+Writing .update() methods for nested representations
+Handling saving related instances in model manager classes
+Dealing with multiple objects
+Serializing multiple objects
+Deserializing multiple objects
+Including extra context
+ModelSerializer
+Inspecting a ModelSerializer
+Specifying which fields to include
+Specifying nested serialization
+Specifying fields explicitly
+Specifying read only fields
+Additional keyword arguments
+Relational fields
+Customizing field mappings
+serializer_field_mapping
+serializer_related_field
+serializer_url_field
+serializer_choice_field
+The field_class and field_kwargs API
+build_standard_field(self, field_name, model_field)
+build_relational_field(self, field_name, relation_info)
+build_nested_field(self, field_name, relation_info, nested_depth)
+build_property_field(self, field_name, model_class)
+build_url_field(self, field_name, model_class)
+build_unknown_field(self, field_name, model_class)
+HyperlinkedModelSerializer
+Absolute and relative URLs
+How hyperlinked views are determined
+Changing the URL field name
+ListSerializer
+Customizing ListSerializer behavior
+Customizing multiple create
+Customizing multiple update
+Customizing ListSerializer initialization
+BaseSerializer
+Read-only BaseSerializer classes
+Read-write BaseSerializer classes
+Creating new base classes
+Advanced serializer usage
+Overriding serialization and deserialization behavior
+to_representation(self, instance)
+to_internal_value(self, data)
+Serializer Inheritance
+Dynamically modifying fields
+Example
+Customizing the default fields
+Third party packages
+Django REST marshmallow
+Serpy
+MongoengineModelSerializer
+GeoFeatureModelSerializer
+HStoreSerializer
+Dynamic REST
+Dynamic Fields Mixin
+DRF FlexFields
+Serializer Extensions
+HTML JSON Forms
+DRF-Base64
+QueryFields
+DRF Writable Nested
+DRF Encrypt Content
+Shapeless Serializers
+DRF Pydantic
+Home
+API Guide
+Serializers
+Expanding the usefulness of the serializers is something that we would like to address. However, it's not a trivial problem, and it will take some serious design work.
+
+— Russell Keith-Magee, Django users group
+
+Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types. Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data.
 
 
 
 
-
-
-
+0751846872
 
 QNS 
 why install djangorestframework,pygments
+why do we run migrations
+why do we create serializers{
+    to convert our data into json form like or from json back to our db across the front end
+}
