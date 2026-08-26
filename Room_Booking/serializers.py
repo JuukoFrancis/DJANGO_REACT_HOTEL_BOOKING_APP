@@ -2,9 +2,12 @@ from rest_framework import serializers
 from .models import Room
 
 class RoomSerializer(serializers.HyperlinkedModelSerializer):
-    name
-    type
-    pricePerNIght
-    currency
-    maxOccupancy
-    description    
+    class Meta:
+        model = Room
+        fields = ["name" , "type" , "pricePerNIght" , "currency" ,"maxOccupancy", "description"    ]
+    
+    
+    
+    
+    
+    

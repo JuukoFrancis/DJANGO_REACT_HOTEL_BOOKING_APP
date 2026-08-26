@@ -9,6 +9,7 @@ pip install pygments
 django-admin startproject Booking_backend .
 py manage.py startapp Room_Booking
 
+The reason we end with a dot to create the app in that very directory
 
 
 
@@ -27,7 +28,29 @@ Create superuser
 py manage.py createsuperuser
 
 Create serializers
-inheit from  serializers.HyperlinkedModelSerializer because we're building from the api routes
+inherit from  serializers.HyperlinkedModelSerializer because we're building from the api routes
+
+
+Types of serializers
+1. serializers.Serializer
+2. serializers.ModelSerializer
+3. serializers.HyperlinkedModelSerializer
+
+Created a HyperlinkedModelSerializer
+with a meta class (configuration is a shortcut that tells Django REST Framework (DRF) to automatically build the serializer fields for you based on your database model.)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Viewsets
@@ -155,4 +178,6 @@ why install djangorestframework,pygments
 why do we run migrations
 why do we create serializers{
     to convert our data into json form like or from json back to our db across the front end
+    Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types. Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data.
+
 }

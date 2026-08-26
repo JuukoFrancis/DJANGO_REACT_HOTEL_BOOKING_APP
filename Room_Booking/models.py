@@ -22,6 +22,6 @@ class Room(models.Model):
     description = models.TextField(max_length=1)
 
     def __str__(self):
-        return f" {self.name}  ({self.type})"
+        return f"{self.name}  ({self.type})"
     # 07:40
 
