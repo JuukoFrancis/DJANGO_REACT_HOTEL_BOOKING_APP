@@ -41,11 +41,18 @@ with a meta class (configuration is a shortcut that tells Django REST Framework 
 
 
 
+Creating views and types of views
+class based views
+Function based views
 
+Function-Based View: Use for one-off operations (e.g., def complete_booking(request):).
+APIView (CBV): Use when building an endpoint with completely custom search logic or data manipulation before saving.
+Mixins: Use when you want a view that allows users to read and update data, but explicitly blocks them from deleting anything.
+Generic Views: Use for your standard database tables where you just need typical React frontend integration.
 
-
-
-
+NOTE: Whenever we create a model, we have to run migrations like
+py manage.py makemigrations
+py manage.py migrate
 
 
 
