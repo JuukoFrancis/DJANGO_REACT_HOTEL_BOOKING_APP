@@ -1,3 +1,10 @@
+pip install django
+pip install djangorestframework
+pip install pygments
+pip install Pillow
+
+
+
 Now maybe what you can do next is come up with the real system itself
 I.e 
 The backend, the frontend

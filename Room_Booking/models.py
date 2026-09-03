@@ -19,9 +19,14 @@ class Room(models.Model):
     pricePerNIght = models.IntegerField(default=150)
     currency = models.CharField(default="UGX", max_length=10, choices=CURRENCY_TYPES)
     maxOccupancy = models.IntegerField(default=1)
-    description = models.TextField(max_length=1)
+    description = models.TextField(max_length=50)
 
     def __str__(self):
         return f"{self.name}  ({self.type})"
     # 07:40
 
+
+class RoomImage(models.Model):
+    image = models.ImageField(upload_to="room_images")
+    caption = models.CharField(max_length=255, blank=True,null=True)
+    room = models.ForeignKey(Room,related_name="images", on_delete=models.CASCADE)
