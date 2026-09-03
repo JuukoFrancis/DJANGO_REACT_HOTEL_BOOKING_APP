@@ -54,9 +54,16 @@ NOTE: Whenever we create a model, we have to run migrations like
 py manage.py makemigrations
 py manage.py migrate
 
+urlpatterns += [
+    path('api-auth' , include('rest_framework.urls'))
+]  The reason for creating this was to create a login session for any api route(login and logout)
 
 
+Create a model that will handle images:
+upload of images
+Create a relationship that make one room to have many images 
 
+python -m pip install Pillow
 
 
 
