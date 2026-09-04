@@ -6,7 +6,7 @@ urlpatterns = [
     path('', views.api_root, name="api-root"),
     path('rooms/', views.RoomList.as_view(), name="room-list"),
     # path('rooms/<int:pk>/', views.RoomDetail.as_view(), name="room-detail")
-    path('rooms/<int:pk>/', views.RoomDetail.as_view())
+    path('rooms/<int:pk>/', views.RoomDetail.as_view(),name="room-detail")
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
